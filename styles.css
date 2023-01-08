@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:#f3eae3 ;
+}
+.grid-container{ 
+    border-radius: 5px;
+    margin: 15.5rem auto;
+    height: 45vh;
+    width: 35%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+}
+.img1{
+    background: url(./images/image-product-desktop.jpg);
+    height: 50vh;
+    width:99%;
+    background-size: cover;
+}
+.info {
+    padding-top: 1.8rem;
+    padding-left: 2.5rem;
+}
+.info h3 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom:1.2rem;
+}
+.title {
+    font-family: 'Fraunces' ;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.desc {
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1rem;
+    font-size: 18px;
+    width: 90%;
+}
+.price {
+    display:flex;
+    align-items: center;
+    gap: 15px;
+}
+.new {
+    font-family: "Fraunces";
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+}
+.old{
+    font-size: 16px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-family: '';
+}
+
+ .product-btn{
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    width: 85%;
+    margin-top: 1.5rem;
+    padding: 12px 0px ;
+    border-radius: 10px;
+    border: none;
+}
+.product-btn:hover{
+    cursor: pointer;
+}
+
+.attribution {
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 14px;
+}
+
+@media (max-width:375px){
+    body{
+        padding:1rem 1rem 1rem 1rem;
+    }
+    .grid-container {
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        height: 95vh;
+        width: 100%;
+    }
+    .img1 {
+        background: url(./images/image-product-mobile.jpg);
+        background-size: cover;
+        background-position: 30%;
+        width: 100%;
+    }
+    .info {
+        padding-top:1.5rem ;
+        padding-left: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .info h3 {
+        font-size: 12px;
+        margin-bottom: .5rem;
+    }
+    .title {
+        margin: 0;
+        margin-bottom: .5rem;
+    }
+}
+
+@media ( max-width:1440px){
+    .grid-container {
+        width: 45%;
+        height: 50vh;
+        margin: auto;
+        margin-top: 12rem;
+    }
+    .img1{
+        background-position:  left 25%;
+    }
+    .info {
+        padding: 1rem;
+    }
+    .info h3{
+        font-size: 8px;
+    }
+    .info h1 {
+        font-size: 20px;
+    } 
+    .info p {
+        font-size: 16px;
+    }
+    .price{
+        display: flex;
+        align-items: center;
+    }
+    .new {
+        font-size: 28px;
+    }
+    .old {
+        font-size: 14px;
+    }
+}
